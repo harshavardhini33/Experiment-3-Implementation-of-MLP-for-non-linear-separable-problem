@@ -1,13 +1,13 @@
-# Experiment-4-Implementation-of-MLP-for-non-linear-separable-problem
-**AIM:**
+# Experiment-3-Implementation-of-MLP-for-non-linear-separable-problem
+## AIM:
 
 To implement a perceptron for classification using Python
 
-**EQUIPMENTS REQUIRED:**
+## EQUIPMENTS REQUIRED:
 Hardware – PCs
 Anaconda – Python 3.7 Installation / Google Colab /Jupiter Notebook
 
-**RELATED THEORETICAL CONCEPT:**
+## RELATED THEORETICAL CONCEPT:
 Exclusive or is a logical operation that outputs true when the inputs differ.For the XOR gate, the TRUTH table will be as follows
 XOR truth table
 ![Img1](https://user-images.githubusercontent.com/112920679/195774720-35c2ed9d-d484-4485-b608-d809931a28f5.gif)
@@ -23,7 +23,7 @@ The inner layers for deeper processing of the inputs are known as hidden layers.
 ![Img 4](https://user-images.githubusercontent.com/112920679/195775183-1f64fe3d-a60e-4998-b4f5-abce9534689d.gif)
 The number of layers in MLP is not fixed and thus can have any number of hidden layers for processing. In the case of MLP, the weights are defined for each hidden layer, which transfers the signal to the next proceeding layer.Using the MLP approach lets us dive into more than two dimensions, which in turn lets us separate the outputs of XOR using multidimensional equations.Each hidden unit invokes an activation function, to range down their output values to 0 or The MLP approach also lies in the class of feed-forward Artificial Neural Network, and thus can only communicate in one direction. MLP solves the XOR problem efficiently by visualizing the data points in multi-dimensions and thus constructing an n-variable equation to fit in the output values using back propagation algorithm
 
-## Algorithm :
+## ALGORITHM :
 ```
 Step 1 : Initialize the input patterns for XOR Gate
 Step 2: Initialize the desired output of the XOR Gate
@@ -39,7 +39,7 @@ Step 4: Repeat the  iteration  until the losses become constant and
              (v)   Append the losses in a list
 Step 5: Test for the XOR patterns.
 ```
-## Program
+## PROGRAM :
 ```
 import numpy as np
 import pandas as pd
@@ -116,12 +116,12 @@ predict(w1,w2,test)
 test=np.array([[1],[1]])
 predict(w1,w2,test)
 ```
-## Output
+## OUTPUT :
 ### Loss Graph :
 ![234758602-00675ddb-67e1-42e6-b455-2ef7d2e8c58d](https://github.com/harshavardhini33/Experiment-3-Implementation-of-MLP-for-non-linear-separable-problem/assets/93427208/0b531017-42e7-4c47-85d4-92983dcd293f)
 
 ### Input - Output for XOR Gate :
 ![234758672-9371e6b6-e7c5-44ec-a251-10f7cccd00f2](https://github.com/harshavardhini33/Experiment-3-Implementation-of-MLP-for-non-linear-separable-problem/assets/93427208/7440f572-a572-4ccc-86f5-20d0c7b5ccac)
 
-### Result :
+### RESULT :
 Thus a MLP is implemented for non linear separable problem using Python.
